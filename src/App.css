@@ -1,38 +1,156 @@
+body {
+  color: #fff;
+  font-weight: 600;
+  overflow-x: hidden;
+  background-color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Lato', 'Roboto', 'Segoe UI',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .App {
+  height: 100vh;
+  background-color: black;
+  overflow: scroll;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+
+  padding: 10px 10px 0;
+}
+
+div.error {
+  color: #721c24;
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 170.25rem;
+  font-weight: bold;
+  margin-bottom: 89px;
+  font-family: 'Space Grotesk', monospace;
+  border: 1px solid #f5c6cb;
+  background-color: #f8d7da;
+}
+
+.signin-text {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1;
+  margin-top: -10px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+}
+
+.result-text {
+  font-size: 36px;
+  line-height: 1;
+  margin-top: 20px;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+}
+
+.form-control {
+  width: 100%;
+  color: #ccc;
+  height: 44px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  outline: #721c24;
+  border: 1;
+  font-size: 14px;
+  box-shadow: #ccc;
+  border-radius: 6px;
+  padding: 10px 10px 10px 20px;
+  letter-spacing: -0.04em;
+  background-color: #191b1f;
+  font-family: 'SFMonoRegular', monospace;
+  font-weight: bold;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 1px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  cursor: text;
+}
+
+.image {
+  border-radius: 0.35rem;
+  width: 120%;
+  max-width: 100%;
+  cursor: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image2 {
+  border-radius: 0.35rem;
+  width: 47%;
+  max-width: 100%;
+  cursor: auto;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.iconImage {
+  width: 43%;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.footer {
+  margin-top: 80px;
+}
+
+.handButton {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  margin-left: 7px;
+  margin-right: 7px;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #191b1f;
+  border: 3px solid #191b1f;
+  transition: all 0.3s ease-in;
+  border-color: #404fff;
 }
 
-.App-link {
-  color: #61dafb;
+.button-container {
+  margin: 0 auto;
+  padding: 4px;
+  border-radius: 18px;
+  background-color: #191b1f;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  max-width: 38%;
+
+  position: relative;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resultHandType {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
 }
